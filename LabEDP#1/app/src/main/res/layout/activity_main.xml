@@ -8,15 +8,19 @@
     android:paddingRight="16dp">
 
     <EditText
+        android:id="@+id/defaultEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Default TextEditzzz" />
+        android:hint="Default TextEdit"
+        android:textColorLink="@android:color/background_light"
+        android:textIsSelectable="true" />
 
     <EditText
+        android:id="@+id/customEdit"
         android:layout_width="match_parent"
         android:layout_height="39dp"
-        android:layout_gravity="center"
+        android:layout_gravity="top"
         android:background="@drawable/ic_launcher_background"
         android:backgroundTint="@android:color/holo_blue_light"
         android:hint="Custom TextEdit"
@@ -72,13 +76,5 @@
         android:textSize="24sp"
         android:textStyle="italic"
         android:id="@+id/customText"/>
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
 
 </LinearLayout>

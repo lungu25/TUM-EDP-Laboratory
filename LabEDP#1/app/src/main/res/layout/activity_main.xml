@@ -33,14 +33,14 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-
+            android:id="@+id/customButton"
             android:layout_gravity="center"
             android:text="Default Button" />
 
         <Button
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="100dp"
-
+            android:id="@+id/defaultButton"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/ic_launcher_background"
@@ -58,7 +58,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Default Text" />
+        android:text="Default Text"
+        android:id="@+id/defaultText"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,6 +70,15 @@
         android:text="Insert your Dream bursa"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="24sp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:id="@+id/customText"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
 </LinearLayout>

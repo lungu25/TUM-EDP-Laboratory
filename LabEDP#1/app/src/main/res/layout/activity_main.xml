@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:hint="Default TextEdit"
         android:textColorLink="@android:color/background_light"
-        android:textIsSelectable="true" />
+         />
 
     <EditText
         android:id="@+id/customEdit"
@@ -37,14 +37,14 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:id="@+id/customButton"
+            android:id="@+id/defaultButton"
             android:layout_gravity="center"
             android:text="Default Button" />
 
         <Button
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="100dp"
-            android:id="@+id/defaultButton"
+            android:id="@+id/customButton"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/ic_launcher_background"

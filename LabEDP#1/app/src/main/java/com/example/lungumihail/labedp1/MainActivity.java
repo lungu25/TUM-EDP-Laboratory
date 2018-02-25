@@ -7,6 +7,7 @@ import android.view.View;
 
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,16 +16,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         Button customButton = (Button) findViewById(R.id.customButton);
         final TextView customText = (TextView) findViewById(R.id.customText);
+
+
+
+
         Button defaultButton = (Button) findViewById(R.id.defaultButton);
         final TextView defaultText = (TextView) findViewById(R.id.defaultText);
         final EditText defaultEdit = (EditText) findViewById(R.id.defaultEdit);
+
+
         customButton.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 customText.setTextSize(15);
-                defaultText.setTextColor(0xFF0000);
+                defaultText.setTextColor(0xffff00ff);
 
 
             }
@@ -35,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
                 defaultText.setTextColor(0xFF00FF00);
                 customText.setTextSize(40);
-                defaultEdit.setTextColor(0xFF0000);
+                defaultEdit.setTextColor(0xffff00ff);
+                defaultEdit.setBackgroundColor(0xFF00FF00);
+                defaultEdit.setLayoutParams(new LinearLayout.LayoutParams(200, 350));
             }
         });
 

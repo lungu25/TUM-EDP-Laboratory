@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,12 +10,18 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Default TextEdit" />
+        android:layout_gravity="center"
+        android:hint="Default TextEditzzz" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Custom TextEdit" />
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:hint="Custom TextEdit"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="italic" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -27,13 +34,21 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
 
+            android:layout_gravity="center"
             android:text="Default Button" />
 
         <Button
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
 
-            android:text="Custom Button" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Custom Button"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
 
     </LinearLayout>
@@ -42,13 +57,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Default Text"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:text="Default Text" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Custom Text"
-        android:layout_gravity="center"/>
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="Insert your Dream bursa"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:textStyle="italic" />
 
 </LinearLayout>

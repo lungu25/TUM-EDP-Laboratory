@@ -9,8 +9,11 @@ I give to all elemnts and "id" that helped me to manipulate with them when I wan
 I choose Programming Style Guideline Cammel Case, because It is used by Android Studio and JAVA and I find it easy to implement and use.
 
 [Initial execution](screens/1.png "Screen 1")
+
 [After pressing Default button](screens/2.png "Screen 2")
+
 [After pressing Custom Button ](screens/3.png "Screen 3")
+
 
 
 

@@ -14,6 +14,8 @@ I choose Programming Style Guideline Cammel Case, because It is used by Android 
 
 [After pressing Custom Button ](screens/3.png "Screen 3")
 
+[Fixed custom text wiew in the center ](screens/4.png "Screen 3")
+
 
 
 

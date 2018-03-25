@@ -1,11 +1,8 @@
 # Laboratory 1
 
 [Condition](https://github.com/TUM-FAF/WP/tree/master/lab%231)
-<<<<<<< HEAD
-# Sollution/Users/lungumihail/Desktop/RiftHack/EndlessRun2/LabEDP#1
-=======
+
 # Solution
->>>>>>> 2201c6ba0f9262fd6d93eab05995984e6b920076
 In this laboratory work I created an Android Application with some custom and default elements.
 I fixed in the center a default TextView.
 All elements will change their properties like text style,color, dimension when user will press any custom or default button.

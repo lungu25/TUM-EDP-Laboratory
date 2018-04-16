@@ -42,7 +42,7 @@ public class DrawingView extends View{
     //canvas bitmap
     private Bitmap canvasBitmap;
 
-    private Bitmap mBitmapFromSdcard;
+    private Bitmap mBitmap;
 
     private float brushSize, lastBrushSize;
 
@@ -80,6 +80,9 @@ public class DrawingView extends View{
         drawPaint.setStrokeCap(Paint.Cap.ROUND);
 
         canvasPaint = new Paint(Paint.DITHER_FLAG);
+
+        mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.mario);
+        mBitmap = Bitmap.createScaledBitmap(mBitmap, 1000, 1000, false);
     }
 
     public void drawLine0(){
@@ -241,12 +244,8 @@ public class DrawingView extends View{
         canvas.drawPath(drawPath, drawPaint);
 
         /////////DRAW BITMAP/////////////////////
-        String imageName="/storage/emulated/0/storage/emulated/0/mario.png";
-        File sd = Environment.getExternalStorageDirectory();
-        File image = new File(sd, imageName);
-        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-        mBitmapFromSdcard = BitmapFactory.decodeFile(imageName,bmOptions);
-        drawCanvas.drawBitmap(mBitmapFromSdcard, 10, 900, null);
+
+        drawCanvas.drawBitmap(mBitmap,0,0, null);
 
 
 
